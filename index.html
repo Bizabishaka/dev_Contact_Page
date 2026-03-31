@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="index.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <img src="../assets/Logo.svg" alt="Logo" class="logo" />
+    </header>
+    <div class="headers">
+      <h1>Interested in our business pricing?</h1>
+      <h2>
+        Fill out the form to view details and we’ll contact you as soon as
+        possible.
+      </h2>
+    </div>
+    <main class="container">
+      <form class="form" action="" method="post">
+        <div>
+          <label for="name">Name</label>
+          <input
+            type="text"
+            placeholder="Ethan Johnson"
+            id="name"
+            name="name"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="email">Company Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="ethan@johnson.com"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="subject">Company Size</label>
+          <select id="subject" name="subject">
+            <option value="landing">50 - 100 employees</option>
+            <option value="design">100 - 150 employees</option>
+            <option value="marketing">150 - 250 employees</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="subject">Subject</label>
+          <select id="subject" name="subject">
+            <option value="landing">Building Landing Pages</option>
+            <option value="design">UI/UX Design</option>
+            <option value="marketing">Marketing</option>
+          </select>
+        </div>
+
+        <div class="full">
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="50 - 100 employees"
+            required
+          ></textarea>
+        </div>
+
+        <div class="full">
+          <input type="submit" value="Contact Sales" />
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
